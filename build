@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+docker build -t idrac . && docker run -e DISPLAY -v /home/root/.Xauthority:/root/.Xauthority --network host -it idrac
